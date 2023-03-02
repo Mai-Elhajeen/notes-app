@@ -83,7 +83,7 @@ h2 {
 
 
 /* NOTES PAGE */
-.notes__header {
+.notes-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -93,7 +93,7 @@ h2 {
 }
 
 
-.notes__header input {
+.notes-header input {
     padding: 0.7rem 1rem;
     background: transparent;
     border: 1px solid var(--color-bg-dark);
@@ -104,13 +104,13 @@ h2 {
     margin-right: 1.5rem;
 }
 
-.notes__container {
+.notes-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1.2rem;
 }
 
-.empty__notes {
+.empty-notes {
     position: absolute;
     left: 50%;
     top: 50%;
@@ -149,7 +149,7 @@ h2 {
     opacity: 0.85;
 }
 
-.btn.add__btn {
+.btn.add-btn {
     position: fixed;
     bottom: 4rem;
     right: 7rem;
@@ -161,20 +161,20 @@ h2 {
 
 
 /* CREATE NOTE & EDIT NOTE PAGE */
-.create-note__header {
+.create-note-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.create-note__form {
+.create-note-form {
     display: flex;
     flex-direction: column;
     gap: 1rem;
     margin-top: 2rem;
 }
 
-.create-note__form input, .create-note__form textarea {
+.create-note-form input, .create-note-form textarea {
     width: 100%;
     padding: 0.5rem 1rem;
     background: transparent;
@@ -183,7 +183,7 @@ h2 {
     color: var(--color-white);
 }
 
-.create-note__form input {
+.create-note-form input {
     font-size: 2rem;
 }
 
@@ -196,7 +196,7 @@ h2 {
         padding: 2rem 1rem;
     }
 
-    .notes__header {
+    .notes-header {
         width: 100%;
         padding: 2rem 1rem;
         position: fixed;
@@ -204,12 +204,12 @@ h2 {
         left: 0;
     }
 
-    .notes__container {
+    .notes-container {
         margin-top: 5rem;
         gap: 1rem;
     }
 
-    .btn.add__btn {
+    .btn.add-btn {
         padding: 1.5rem;
         font-size: 1.5rem;
         bottom: 6%;
