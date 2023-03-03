@@ -30,12 +30,17 @@ const EditNote = ({ notes, setNotes }) => {
     }
     navigate('/')
   }
+  const handelDelete = ()=>{
+    const newNotes = notes.filter((item) => item.id !== id);
+    setNotes(newNotes)
+    navigate('/')
+  }
   return (
     <section>
       <header className='create-note-header'>
         <Link to='/' className='btn'><IoIosArrowBack /></Link>
         <button className='btn lg primary' onClick={handelForm}>Save</button>
-        <button className='btn danger'><MdDelete /></button>
+        <button className='btn danger' onClick={handelDelete}><MdDelete /></button>
       </header>
       <form className='create-note-form' onSubmit={handelForm}>
         <input type="text" placeholder='Title' value={title} onChange={(e)=> setTitle(e.target.value)} autoFocus />
